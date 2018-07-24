@@ -1,8 +1,6 @@
-const mongoose = require('mongoose');
-const Movie = require('../models/movies');
-
-const dbName = 'Back-To-The-Future';
-mongoose.connect(`mongodb://localhost/${dbName}`);
+const mongoose           = require('mongoose');
+mongoose.connect('mongodb://localhost/express-back-to-future')
+const Movie            = require('../models/movies');
 
 const movies = [
   {
